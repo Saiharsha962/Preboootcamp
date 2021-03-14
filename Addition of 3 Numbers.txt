@@ -1,0 +1,30 @@
+Addition of 3 numbers
+========================================
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+    var Num1= userInput[0];
+    var Num2= userInput[1];
+    var Num3= userInput[2];
+    console.log(+Num1+ +Num2+ +Num3);
+     
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+
+   
+
+  //end-here
+});
+    
+ 
